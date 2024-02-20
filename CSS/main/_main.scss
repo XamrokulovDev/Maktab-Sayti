@@ -119,24 +119,28 @@ main{
     }
     .main_footer{
         width: 40vw;
-        height: 40vh;
+        height: 30vh;
         margin: 100px auto;
         font-family: "Open Sans", sans-serif;
-        border: 1px solid black;
         h1{
+            font-size: 38px;
             margin: 10px 0;
             color: #1B213A;
         }
         p{
+            font-size: 16px;
             color: #666666;
+            margin-bottom: 20px;
         }
         form{
-            width: 75%;
+            width: 70%;
+            margin: 0 auto;
             position: relative;
             input{
                 width: 100%;
                 outline: none;
                 border: none;
+                color: #1B213A;
                 background-color: #F2F2F2;
                 border-radius: 8px;
                 text-align: start;
@@ -155,7 +159,14 @@ main{
             }
         }
     }
+    button{
+        outline: none;
+        cursor: pointer;
+    }
 }
+
+// website resposive 
+
 @media (min-width: 0px) and (max-width: 576px) {
     main{
         width: 100vw;
@@ -182,6 +193,18 @@ main{
                 button{
                     padding: 0.5vh 1vw;
                 }
+            }
+        }
+        .main_footer{
+            width: 90vw;
+            h1{
+                font-size: 30px;
+            }
+            p{
+                font-size: 15px;
+            }
+            form{
+                width: 90%;
             }
         }
     }
@@ -213,6 +236,12 @@ main{
                 }
             }
         }
+        .main_footer{
+            width: 80vw;
+            h1{
+                font-size: 35px;
+            }
+        }
     }
 }
 @media (min-width: 768px) and (max-width: 992px) {
@@ -242,6 +271,9 @@ main{
                 }
             }
         }
+        .main_footer{
+            width: 65vw;
+        }
     }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -251,9 +283,15 @@ main{
             grid-template-columns: repeat(3,1fr);
             gap: 35px;
         }
+        .main_footer{
+            width: 50vw;
+        }
     }
 }
-button{
-    outline: none;
-    cursor: pointer;
+@media (min-width: 1200px) {
+    main{
+        .main_footer{
+            width: 50vw;
+        }
+    }
 }

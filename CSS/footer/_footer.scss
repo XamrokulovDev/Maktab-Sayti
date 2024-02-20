@@ -1,0 +1,121 @@
+footer{
+    width: 100vw;
+    background-color: #F2F2F2;
+    border-bottom: 2px solid #DEDEDE;
+    .container{
+        padding: 50px 0;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        gap: 35px;
+        font-family: "Open Sans", sans-serif;
+        width: 80vw;
+        h1{
+            color: #000000;
+            margin-bottom: 25px;
+        }
+        h2{
+            margin-bottom: 25px;
+            color: #1B213A;
+        }
+        p{
+            margin-bottom: 15px;
+            color: #1B213A;
+        }
+        a{
+            color: #404040;
+        }
+    }
+    .last_content{
+        padding: 25px 0;
+        color: #646464;
+        font-family: "Open Sans", sans-serif;
+        display: flex;
+        justify-content: space-between;
+        width: 80vw;
+        margin: 0 auto;
+        span{
+            display: flex;
+            #p{
+                margin-left: 30px;
+            }
+        }
+    }
+}
+@media (min-width: 0px) and (max-width: 576px) {
+    footer{
+        .container{
+            display: grid;
+            gap: 0;
+            width: 90vw;
+            h1{
+                font-size: 13px;
+            }
+            h2{
+                font-size: 9px;
+            }
+            p{
+                font-size: 6px;
+            }
+        }
+        .last_content{
+            width: 90vw;
+            p{
+                font-size: 12px;
+            }
+            #p{
+                margin-left: 10px;
+            }
+        }
+    }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+    footer{
+        .container{
+            display: grid;
+            gap: 0;
+            width: 90vw;
+            h1{
+                font-size: 13px;
+            }
+            h2{
+                font-size: 9px;
+            }
+            p{
+                font-size: 6px;
+            }
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    footer{
+        .container{
+            display: grid;
+            gap: 0;
+            h1{
+                font-size: 25px;
+            }
+            h2{
+                font-size: 15px;
+            }
+            p{
+                font-size: 12px;
+            }
+            a{
+                i{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1024px){
+    footer{
+        .container{
+            a{
+                i{
+                    font-size: 35px;
+                }
+            }
+        }
+    }
+}

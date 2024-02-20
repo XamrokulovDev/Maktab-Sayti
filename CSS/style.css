@@ -140,13 +140,16 @@ header aside .aside_pic {
 @media (min-width: 0px) and (max-width: 325px) {
   header section .header_main {
     width: 80vw;
-    padding: 30px 0;
+    padding: 90px 0;
   }
   header section .header_main h3 {
     font-size: 13px;
   }
   header section .header_main h1 {
     font-size: 30px;
+  }
+  header section .header_main p {
+    font-size: 13px;
   }
 }
 @media (min-width: 0px) and (max-width: 576px) {
@@ -381,26 +384,30 @@ main .slider {
 }
 main .main_footer {
   width: 40vw;
-  height: 40vh;
+  height: 30vh;
   margin: 100px auto;
   font-family: "Open Sans", sans-serif;
-  border: 1px solid black;
 }
 main .main_footer h1 {
+  font-size: 38px;
   margin: 10px 0;
   color: #1B213A;
 }
 main .main_footer p {
+  font-size: 16px;
   color: #666666;
+  margin-bottom: 20px;
 }
 main .main_footer form {
-  width: 75%;
+  width: 70%;
+  margin: 0 auto;
   position: relative;
 }
 main .main_footer form input {
   width: 100%;
   outline: none;
   border: none;
+  color: #1B213A;
   background-color: #F2F2F2;
   border-radius: 8px;
   text-align: start;
@@ -416,6 +423,10 @@ main .main_footer form button {
   color: #FFFFFF;
   padding: 9px 8px;
   font-size: 16px;
+}
+main button {
+  outline: none;
+  cursor: pointer;
 }
 
 @media (min-width: 0px) and (max-width: 576px) {
@@ -445,6 +456,18 @@ main .main_footer form button {
   main .main_content .main_text button {
     padding: 0.5vh 1vw;
   }
+  main .main_footer {
+    width: 90vw;
+  }
+  main .main_footer h1 {
+    font-size: 30px;
+  }
+  main .main_footer p {
+    font-size: 15px;
+  }
+  main .main_footer form {
+    width: 90%;
+  }
 }
 @media (min-width: 576px) and (max-width: 768px) {
   main .container {
@@ -469,6 +492,12 @@ main .main_footer form button {
   }
   main .main_content .main_text button {
     padding: 0.5vh 1vw;
+  }
+  main .main_footer {
+    width: 80vw;
+  }
+  main .main_footer h1 {
+    font-size: 35px;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
@@ -495,6 +524,9 @@ main .main_footer form button {
   main .main_content .main_text button {
     padding: 0.4vh 0.8vw;
   }
+  main .main_footer {
+    width: 65vw;
+  }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   main .container {
@@ -502,8 +534,120 @@ main .main_footer form button {
     grid-template-columns: repeat(3, 1fr);
     gap: 35px;
   }
+  main .main_footer {
+    width: 50vw;
+  }
 }
-button {
-  outline: none;
-  cursor: pointer;
+@media (min-width: 1200px) {
+  main .main_footer {
+    width: 50vw;
+  }
+}
+footer {
+  width: 100vw;
+  background-color: #F2F2F2;
+  border-bottom: 2px solid #DEDEDE;
+}
+footer .container {
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 35px;
+  font-family: "Open Sans", sans-serif;
+  width: 80vw;
+}
+footer .container h1 {
+  color: #000000;
+  margin-bottom: 25px;
+}
+footer .container h2 {
+  margin-bottom: 25px;
+  color: #1B213A;
+}
+footer .container p {
+  margin-bottom: 15px;
+  color: #1B213A;
+}
+footer .container a {
+  color: #404040;
+}
+footer .last_content {
+  padding: 25px 0;
+  color: #646464;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+  margin: 0 auto;
+}
+footer .last_content span {
+  display: flex;
+}
+footer .last_content span #p {
+  margin-left: 30px;
+}
+
+@media (min-width: 0px) and (max-width: 576px) {
+  footer .container {
+    display: grid;
+    gap: 0;
+    width: 90vw;
+  }
+  footer .container h1 {
+    font-size: 13px;
+  }
+  footer .container h2 {
+    font-size: 9px;
+  }
+  footer .container p {
+    font-size: 6px;
+  }
+  footer .last_content {
+    width: 90vw;
+  }
+  footer .last_content p {
+    font-size: 12px;
+  }
+  footer .last_content #p {
+    margin-left: 10px;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  footer .container {
+    display: grid;
+    gap: 0;
+    width: 90vw;
+  }
+  footer .container h1 {
+    font-size: 13px;
+  }
+  footer .container h2 {
+    font-size: 9px;
+  }
+  footer .container p {
+    font-size: 6px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  footer .container {
+    display: grid;
+    gap: 0;
+  }
+  footer .container h1 {
+    font-size: 25px;
+  }
+  footer .container h2 {
+    font-size: 15px;
+  }
+  footer .container p {
+    font-size: 12px;
+  }
+  footer .container a i {
+    font-size: 25px;
+  }
+}
+@media (min-width: 1024px) {
+  footer .container a i {
+    font-size: 35px;
+  }
 }/*# sourceMappingURL=style.css.map */
