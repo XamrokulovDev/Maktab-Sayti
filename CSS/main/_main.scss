@@ -1,0 +1,259 @@
+::-webkit-scrollbar{
+    width: 0;
+}
+main{
+    overflow-x: hidden;
+    text-align: center;
+    h1{
+        font-family: "Open Sans", sans-serif;
+        margin: 80px 0;
+        font-weight: 700;
+    }
+    .container{
+        width: 80vw;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 50px;
+        font-family: "Open Sans", sans-serif;
+        margin: 80px auto;
+        .card{
+            text-align: start;
+            .card_pic{
+                width: 100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .card_body{
+                padding: 20px 20px;
+                border: 1px solid #C4C4C4;
+                h2{
+                    font-weight: 600;
+                    padding: 5px 0;
+                    font-size: 22px;
+                    color: #1B213A;
+                }
+                .size{
+                    display: flex;
+                    align-items: center;
+                    h4{
+                        margin: 10px 0;
+                        font-size: 17px;
+                        color: #FB5E16;
+                    }
+                    .new{
+                        font-weight: 500;
+                        margin-left: 10px;
+                        padding-left: 10px;
+                        border-left: 1px solid #C4C4C4;
+                        color: #1B213A;
+                    }
+                    p{
+                        margin: 5px 0;
+                        padding-right: 10px;
+                        color: #646464;
+                    }
+                    .p{
+                        border-left: 1px solid #C4C4C4;
+                        padding-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .main_content{
+        display: flex;
+        text-align: start;
+        width: 80vw;
+        height: 30vw;
+        margin: 100px auto;
+        .main_pic{
+            width: 45%;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .main_text{
+            width: 55%;
+            padding-left: 40px;
+            font-family: "Open Sans", sans-serif;
+            h4{
+                color: #FB5E16;
+                font-size: 2vw;
+            }
+            h1{
+                color: #1B213A;
+                margin: 2.6vh 0;
+                font-size: 3.07vw;
+            }
+            p{
+                color: #646464;
+                margin-bottom: 4vh;
+                font-size: 1.2vw;
+            }
+            button{
+                border: 1.5px solid #FB5E16;
+                padding: 1.3vh 0.9vw;
+                font-size: 1.4vw;
+                color: #FB5E16;
+                font-weight: 600;
+                background-color: transparent;
+            }
+        }
+    }
+    #main_btn{
+        border: 1.5px solid #FB5E16;
+        padding: 10px 8px;
+        font-size: 16px;
+        color: #FB5E16;
+        font-weight: 600;
+        background-color: transparent;
+    }
+    .slider{
+        width: 100vw;
+        height: 45vh;
+        margin: 100px 0;
+        background-color: #F2F2F2;
+    }
+    .main_footer{
+        width: 40vw;
+        height: 40vh;
+        margin: 100px auto;
+        font-family: "Open Sans", sans-serif;
+        border: 1px solid black;
+        h1{
+            margin: 10px 0;
+            color: #1B213A;
+        }
+        p{
+            color: #666666;
+        }
+        form{
+            width: 75%;
+            position: relative;
+            input{
+                width: 100%;
+                outline: none;
+                border: none;
+                background-color: #F2F2F2;
+                border-radius: 8px;
+                text-align: start;
+                padding: 16px;
+            }
+            button{
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                border: none;
+                border-radius: 6px;
+                background-color: #FB5E16;
+                color: #FFFFFF;
+                padding: 9px 8px;
+                font-size: 16px;
+            }
+        }
+    }
+}
+@media (min-width: 0px) and (max-width: 576px) {
+    main{
+        width: 100vw;
+        .container{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            gap: 50px;
+        }
+        .main_content{
+            width: 80vw;
+            .main_text{
+                h4{
+                    font-size: 2.25vw;
+                }
+                h1{
+                    margin: 1.2vh 0;
+                    font-size: 2.36vw;
+                }
+                p{
+                    line-height: 1.5;
+                    font-size: 1vw;
+                    margin-bottom: 0.1vh;
+                }
+                button{
+                    padding: 0.5vh 1vw;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+    main{
+        .container{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            gap: 30px;
+        }
+        .main_content{
+            width: 80vw;
+            .main_text{
+                h4{
+                    font-size: 2.25vw;
+                }
+                h1{
+                    margin: 1.2vh 0;
+                    font-size: 2.36vw;
+                }
+                p{
+                    line-height: 1.5;
+                    font-size: 1vw;
+                    margin-bottom: 0.1vh;
+                }
+                button{
+                    padding: 0.5vh 1vw;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    main{
+        .container{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 10px;
+        }
+        .main_content{
+            width: 80vw;
+            .main_text{
+                h4{
+                    font-size: 2.25vw;
+                }
+                h1{
+                    margin: 1.2vh 0;
+                    font-size: 2.82vw;
+                }
+                p{
+                    line-height: 1.6;
+                    font-size: 1vw;
+                    margin-bottom: 1vh;
+                }
+                button{
+                    padding: 0.4vh 0.8vw;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+    main{
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 35px;
+        }
+    }
+}
+button{
+    outline: none;
+    cursor: pointer;
+}
