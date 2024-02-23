@@ -44,18 +44,12 @@ footer{
 @media (min-width: 0px) and (max-width: 576px) {
     footer{
         .container{
+            text-align: center;
+            width: 70vw;
             display: grid;
-            gap: 0;
+            grid-template-columns: repeat(1,1fr);
+            gap: 50px;
             width: 90vw;
-            h1{
-                font-size: 13px;
-            }
-            h2{
-                font-size: 9px;
-            }
-            p{
-                font-size: 6px;
-            }
         }
         .last_content{
             width: 90vw;
@@ -71,18 +65,11 @@ footer{
 @media (min-width: 576px) and (max-width: 768px) {
     footer{
         .container{
+            text-align: center;
             display: grid;
-            gap: 0;
+            grid-template-columns: repeat(2,1fr);
+            gap: 50px;
             width: 90vw;
-            h1{
-                font-size: 13px;
-            }
-            h2{
-                font-size: 9px;
-            }
-            p{
-                font-size: 6px;
-            }
         }
     }
 }

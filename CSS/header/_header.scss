@@ -233,15 +233,27 @@ header{
             width: 65vw;
             nav{
                 .container{
+                    padding: 15px;
                     width: 55vw;
                 }
             }
             .header_main{
+                margin-top: 100px;
                 width: 55vw;
             }
         }
         aside{
             width: 35vw;
+            .register{
+                padding: 35px;
+            }
+        }
+    }
+}
+@media (min-width: 1200px) {
+    header{
+        .header_main{
+            margin-top: 100px;
         }
     }
 }

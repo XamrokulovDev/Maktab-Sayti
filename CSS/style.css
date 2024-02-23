@@ -252,13 +252,23 @@ header aside .aside_pic {
     width: 65vw;
   }
   header section nav .container {
+    padding: 15px;
     width: 55vw;
   }
   header section .header_main {
+    margin-top: 100px;
     width: 55vw;
   }
   header aside {
     width: 35vw;
+  }
+  header aside .register {
+    padding: 35px;
+  }
+}
+@media (min-width: 1200px) {
+  header .header_main {
+    margin-top: 100px;
   }
 }
 ::-webkit-scrollbar {
@@ -328,7 +338,9 @@ main .container .card .card_body .size .p {
   padding-left: 10px;
 }
 main .main_content {
-  display: flex;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
   text-align: start;
   width: 80vw;
   height: 30vw;
@@ -439,22 +451,33 @@ main button {
     gap: 50px;
   }
   main .main_content {
-    width: 80vw;
+    height: 80vh;
+    width: 90vw;
+  }
+  main .main_content .main_pic {
+    margin: 0 auto;
+    width: 80%;
+  }
+  main .main_content .main_text {
+    margin-top: 100px;
+    margin-bottom: 250px;
+    width: 100%;
   }
   main .main_content .main_text h4 {
-    font-size: 2.25vw;
+    font-size: 4.25vw;
   }
   main .main_content .main_text h1 {
-    margin: 1.2vh 0;
-    font-size: 2.36vw;
+    margin: 1.4vh 0;
+    font-size: 5.46vw;
   }
   main .main_content .main_text p {
     line-height: 1.5;
-    font-size: 1vw;
-    margin-bottom: 0.1vh;
+    font-size: 2.2vw;
+    margin-bottom: 2.6vh;
   }
   main .main_content .main_text button {
-    padding: 0.5vh 1vw;
+    padding: 0.6vh 1.6vw;
+    font-size: 2vw;
   }
   main .main_footer {
     width: 90vw;
@@ -476,22 +499,33 @@ main button {
     gap: 30px;
   }
   main .main_content {
+    height: 100vh;
     width: 80vw;
   }
+  main .main_content .main_pic {
+    margin: 0 auto;
+    width: 80%;
+  }
+  main .main_content .main_text {
+    margin-top: 100px;
+    margin-bottom: 250px;
+    width: 100%;
+  }
   main .main_content .main_text h4 {
-    font-size: 2.25vw;
+    font-size: 4.25vw;
   }
   main .main_content .main_text h1 {
-    margin: 1.2vh 0;
-    font-size: 2.36vw;
+    margin: 1.4vh 0;
+    font-size: 5.36vw;
   }
   main .main_content .main_text p {
     line-height: 1.5;
-    font-size: 1vw;
-    margin-bottom: 0.1vh;
+    font-size: 2vw;
+    margin-bottom: 2.6vh;
   }
   main .main_content .main_text button {
-    padding: 0.5vh 1vw;
+    padding: 1.2vh 1.5vw;
+    font-size: 2vw;
   }
   main .main_footer {
     width: 80vw;
@@ -507,18 +541,19 @@ main button {
     gap: 10px;
   }
   main .main_content {
-    width: 80vw;
+    display: flex;
+    width: 90vw;
   }
   main .main_content .main_text h4 {
-    font-size: 2.25vw;
+    font-size: 2.15vw;
   }
   main .main_content .main_text h1 {
     margin: 1.2vh 0;
-    font-size: 2.82vw;
+    font-size: 3.02vw;
   }
   main .main_content .main_text p {
     line-height: 1.6;
-    font-size: 1vw;
+    font-size: 1.3vw;
     margin-bottom: 1vh;
   }
   main .main_content .main_text button {
@@ -534,11 +569,17 @@ main button {
     grid-template-columns: repeat(3, 1fr);
     gap: 35px;
   }
+  main .main_content {
+    display: flex;
+  }
   main .main_footer {
     width: 50vw;
   }
 }
 @media (min-width: 1200px) {
+  main .main_content {
+    display: flex;
+  }
   main .main_footer {
     width: 50vw;
   }
@@ -589,18 +630,12 @@ footer .last_content span #p {
 
 @media (min-width: 0px) and (max-width: 576px) {
   footer .container {
+    text-align: center;
+    width: 70vw;
     display: grid;
-    gap: 0;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
     width: 90vw;
-  }
-  footer .container h1 {
-    font-size: 13px;
-  }
-  footer .container h2 {
-    font-size: 9px;
-  }
-  footer .container p {
-    font-size: 6px;
   }
   footer .last_content {
     width: 90vw;
@@ -614,18 +649,11 @@ footer .last_content span #p {
 }
 @media (min-width: 576px) and (max-width: 768px) {
   footer .container {
+    text-align: center;
     display: grid;
-    gap: 0;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
     width: 90vw;
-  }
-  footer .container h1 {
-    font-size: 13px;
-  }
-  footer .container h2 {
-    font-size: 9px;
-  }
-  footer .container p {
-    font-size: 6px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
