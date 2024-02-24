@@ -33,23 +33,348 @@ body {
   color: #FFFFFF;
 }
 
-@media (min-width: 992px) and (max-width: 1200px) {
-  header section {
-    width: 65vw;
+header {
+  height: 100vh;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  position: fixed;
+}
+header nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  padding: 15px 7vw;
+  background-color: #171B2B;
+}
+header nav .container h1 {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+}
+header nav .container ul {
+  display: flex;
+}
+header nav .container ul li {
+  margin-left: 40px;
+}
+header nav .container ul li a {
+  color: #FFFFFF;
+  font-family: "Open Sans", sans-serif;
+  overflow: hidden;
+  position: relative;
+  font-size: 16px;
+  padding: 3px 0;
+}
+header nav .container ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.5s linear;
+}
+header nav .container ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 100%;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.5s linear;
+}
+header nav .container ul li a:hover::after {
+  left: 0;
+}
+header nav .container ul li a:hover::before {
+  right: 0;
+}
+header nav .register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  padding: 16px 0;
+  background-color: #D6EDFF;
+}
+header nav .register .register_item .btn {
+  border: 1.5px solid transparent;
+  border-radius: 4px;
+  color: #000000;
+  background-color: transparent;
+  padding: 5px 8px;
+  margin-left: 20px;
+}
+header nav .register .register_item .btn:hover {
+  border: 1.5px solid #000000;
+  color: #171B2B;
+}
+header .header_main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header_main .header_text {
+  width: 60%;
+  height: 100vh;
+  padding: 24vh 7vw;
+  background-color: #171B2B;
+  color: #FFFFFF;
+  font-family: "Open Sans", sans-serif;
+}
+header .header_main .header_text h2 {
+  text-transform: uppercase;
+}
+header .header_main .header_text h1 {
+  font-size: 60px;
+}
+header .header_main .header_text p {
+  line-height: 1.4;
+  margin: 20px 0;
+}
+header .header_main .header_text form {
+  width: 70%;
+  position: relative;
+}
+header .header_main .header_text form input {
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #1B213A;
+  background-color: #F2F2F2;
+  border-radius: 8px;
+  text-align: start;
+  padding: 16px;
+}
+header .header_main .header_text form button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border: none;
+  border-radius: 6px;
+  background-color: #FB5E16;
+  color: #FFFFFF;
+  padding: 9px 8px;
+  font-size: 16px;
+}
+header .header_main .header_text form button:hover {
+  background-color: #de4802;
+}
+header .header_main .header_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 100vh;
+  background-color: #D6EDFF;
+}
+
+@media (min-width: 0px) and (max-width: 325px) {
+  header nav {
+    position: relative;
   }
-  header section nav .container {
-    padding: 15px;
-    width: 55vw;
+  header nav .container {
+    width: 100vw;
   }
-  header section .header_main {
-    margin-top: 100px;
-    width: 55vw;
+  header nav .container ul {
+    position: absolute;
+    bottom: -130px;
+    right: 3vw;
+    flex-direction: column;
+    background-color: #171B2B;
+    display: none;
   }
-  header aside {
-    width: 35vw;
+  header nav .container ul li {
+    margin: 0px 5px;
   }
-  header aside .register {
-    padding: 35px;
+  header nav .container #navbar_menu {
+    display: block !important;
+  }
+  header nav .container .block {
+    display: block;
+    transition: all 1s linear;
+  }
+  header nav .register {
+    display: none;
+  }
+  header .header_main .header_text {
+    padding: 13vh 7vw;
+    width: 100vw;
+  }
+  header .header_main .header_text h2 {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  header .header_main .header_text h1 {
+    font-size: 25px;
+  }
+  header .header_main .header_text p {
+    font-size: 12px;
+  }
+  header .header_main .header_text form {
+    width: 100%;
+  }
+  header .header_main .header_img {
+    display: none;
+  }
+}
+@media (min-width: 325px) and (max-width: 576px) {
+  header nav {
+    position: relative;
+  }
+  header nav .container {
+    width: 100vw;
+  }
+  header nav .container ul {
+    position: absolute;
+    bottom: -140px;
+    right: 3vw;
+    flex-direction: column;
+    background-color: #171B2B;
+    display: none;
+  }
+  header nav .container ul li {
+    margin: 0px 5px;
+  }
+  header nav .container #navbar_menu {
+    display: block !important;
+  }
+  header nav .container .block {
+    display: block;
+    transition: all 1s linear;
+  }
+  header nav .register {
+    display: none;
+  }
+  header .header_main .header_text {
+    padding: 18vh 7vw;
+    width: 100vw;
+  }
+  header .header_main .header_text h2 {
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+  header .header_main .header_text h1 {
+    font-size: 40px;
+  }
+  header .header_main .header_text p {
+    margin: 20px 0;
+    font-size: 15px;
+  }
+  header .header_main .header_text form {
+    width: 90%;
+  }
+  header .header_main .header_img {
+    display: none;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  header nav {
+    position: relative;
+  }
+  header nav .container {
+    width: 100vw;
+  }
+  header nav .container ul {
+    position: absolute;
+    bottom: -140px;
+    right: 5vw;
+    flex-direction: column;
+    background-color: #171B2B;
+    display: none;
+  }
+  header nav .container ul li {
+    margin: 0px 5px;
+  }
+  header nav .container #navbar_menu {
+    display: block !important;
+  }
+  header nav .container .block {
+    display: block;
+    transition: all 1s linear;
+  }
+  header nav .register {
+    display: none;
+  }
+  header .header_main .header_text {
+    padding: 18vh 7vw;
+    width: 100vw;
+  }
+  header .header_main .header_text h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  header .header_main .header_text h1 {
+    font-size: 60px;
+  }
+  header .header_main .header_text p {
+    margin: 20px 0;
+    font-size: 20px;
+  }
+  header .header_main .header_text form {
+    width: 70%;
+  }
+  header .header_main .header_img {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  header nav {
+    position: relative;
+  }
+  header nav .container {
+    width: 100vw;
+  }
+  header nav .container ul {
+    position: absolute;
+    bottom: -140px;
+    right: 5vw;
+    flex-direction: column;
+    background-color: #171B2B;
+    display: none;
+  }
+  header nav .container ul li {
+    margin: 0px 5px;
+  }
+  header nav .container #navbar_menu {
+    display: block !important;
+  }
+  header nav .container .block {
+    display: block;
+    transition: all 1s linear;
+  }
+  header nav .register {
+    display: none;
+  }
+  header .header_main .header_text {
+    padding: 20vh 7vw;
+    width: 100vw;
+  }
+  header .header_main .header_text h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  header .header_main .header_text h1 {
+    font-size: 65px;
+  }
+  header .header_main .header_text p {
+    margin: 20px 0;
+    font-size: 24px;
+  }
+  header .header_main .header_text form {
+    width: 70%;
+  }
+  header .header_main .header_img {
+    display: none;
   }
 }
 ::-webkit-scrollbar {
@@ -161,6 +486,10 @@ main .main_content .main_text button {
   font-weight: 600;
   background-color: transparent;
 }
+main .main_content .main_text button:hover {
+  background-color: #FB5E16;
+  color: #FFFFFF;
+}
 main #main_btn {
   border: 1.5px solid #FB5E16;
   padding: 10px 8px;
@@ -168,6 +497,10 @@ main #main_btn {
   color: #FB5E16;
   font-weight: 600;
   background-color: transparent;
+}
+main #main_btn:hover {
+  background-color: #FB5E16;
+  color: #FFFFFF;
 }
 main .slider {
   width: 100vw;
@@ -216,6 +549,9 @@ main .main_footer form button {
   color: #FFFFFF;
   padding: 9px 8px;
   font-size: 16px;
+}
+main .main_footer form button:hover {
+  background-color: #de4802;
 }
 main button {
   outline: none;

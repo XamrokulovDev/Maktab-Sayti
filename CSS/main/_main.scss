@@ -1,3 +1,9 @@
+@mixin color {
+    &:hover{
+        background-color: #FB5E16;
+        color: #FFFFFF;
+    }
+}
 ::-webkit-scrollbar{
     width: 0;
 }
@@ -102,6 +108,7 @@ main{
                 color: #FB5E16;
                 font-weight: 600;
                 background-color: transparent;
+                @include color();
             }
         }
     }
@@ -112,6 +119,7 @@ main{
         color: #FB5E16;
         font-weight: 600;
         background-color: transparent;
+        @include color();
     }
     .slider{
         width: 100vw;
@@ -158,6 +166,9 @@ main{
                 color: #FFFFFF;
                 padding: 9px 8px;
                 font-size: 16px;
+                &:hover{
+                    background-color: #de4802;
+                }   
             }
         }
     }

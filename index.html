@@ -9,32 +9,46 @@
     <title>School-website</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav>
             <div class="container">
-                <div class="logo">
-                    <h1>LOGO</h1>
-                </div>
+                <h1>logo</h1>
                 <ul id="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#cards">Service</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#footer">Contact</a></li>
                 </ul>
-                <i class='bx bx-menu bx-lg' id="navbar_menu"></i>
+                <i class='bx bx-menu bx-lg' id="navbar_menu"></i>    
             </div>
             <div class="register">
-                <div class="">
+                <div class="register_item">
                     <button type="submit" class="btn">Sign In</button>
                     <button type="submit" class="btn">Register</button>
                 </div>
             </div>
         </nav>
+        <div class="header_main">
+            <div class="header_text">
+                <h2>Easy way to find your property</h2>
+                <h1>Find the perfect place to stay with your family</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                   Id risus vulputate tortor, risus ut. Viverra viverra aliquam, semper duis a aliquam.
+                </p>
+                <form action="#">
+                    <input type="text" name="email" placeholder="Enter your email...">
+                    <button type="submit">Get Started</button>
+                </form>
+            </div>
+            <div class="header_img">
+                <img src="./images/aside img.svg" alt="">
+            </div>
+        </div>
     </header>
     <main>
         <h1>Our Incridible Partners</h1>
-        <div class="container">
+        <div class="container" id="cards">
             <div class="card">
                 <div class="card_pic">
                     <img src="./images/aston martin cars.jpg" alt="">
@@ -90,7 +104,7 @@
                 </div>
             </div>
         </div>
-        <div class="main_content">
+        <div class="main_content" id="about">
             <div class="main_pic">
                 <img src="./images/aside img.svg" alt="">
             </div>
@@ -216,7 +230,7 @@
         </div>
         <button type="submit" id="main_btn">View All Property</button>
         <div class="slider"></div>
-        <div class="main_footer">
+        <div class="main_footer" id="blog">
             <h1>Upgrade your home today?</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Id risus vulputate tortor, risus ut Viverra viverra aliquam, semper duis a aliquam.
@@ -227,7 +241,7 @@
             </form>
         </div>
     </main>  
-    <footer>
+    <footer id="footer">
         <div class="container">
             <div>
                 <h1>LOGO</h1>
@@ -286,42 +300,3 @@
     <script src="./Js/app.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- <div class="header_main">
-                <h3>Easy way to find your property</h3>
-                <h1>Find the perfect place to stay with your family</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                   Id risus vulputate tortor, risus ut. Viverra viverra 
-                   aliquam, semper duis a aliquam.</p>
-                <form>
-                    <input type="text" placeholder="Enter your email">
-                    <button type="submit">Get Started</button>
-                </form>
-            </div>
-            <div class="aside_pic">
-                <img src="./images/aside img.svg" alt="">
-            </div> -->
