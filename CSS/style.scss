@@ -27,6 +27,9 @@ body{
     display: none;
     color: #FFFFFF;
 }
+button{
+    transition: all 0.3s linear;
+}
 @import "./header/header";
 @import "./main/main";
 @import "./footer/footer"

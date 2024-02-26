@@ -18,6 +18,10 @@ a {
   display: inline-block;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -31,6 +35,10 @@ body {
 #navbar_menu {
   display: none;
   color: #FFFFFF;
+}
+
+button {
+  transition: all 0.3s linear;
 }
 
 header {
