@@ -159,6 +159,7 @@ header{
                    flex-direction: column;
                    background-color: #171B2B;
                    display: none;
+                   transition: all 0.5s linear;
                    li{
                        margin: 0px 5px;
                     }
@@ -168,7 +169,6 @@ header{
                 }
                 .block{
                     display: block;
-                    transition: all 1s linear;
                }
             }
            .register{

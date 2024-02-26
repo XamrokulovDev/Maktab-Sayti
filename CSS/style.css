@@ -18,10 +18,6 @@ a {
   display: inline-block;
 }
 
-html{
-  scroll-behavior: smooth;
-}
-
 body {
   overflow-x: hidden;
 }
@@ -200,6 +196,7 @@ header .header_main .header_img {
     flex-direction: column;
     background-color: #171B2B;
     display: none;
+    transition: all 0.5s linear;
   }
   header nav .container ul li {
     margin: 0px 5px;
@@ -209,7 +206,6 @@ header .header_main .header_img {
   }
   header nav .container .block {
     display: block;
-    transition: all 1s linear;
   }
   header nav .register {
     display: none;
